@@ -5,4 +5,9 @@ This repository provides a Dockerfile to build a Docker image that contains the 
 docker build -f docker/Dockerfile . -t cgal
 ```
 
-Then you can access the Docker container as usual. CGAL demos that use qt5 for visualization have issues playing well with Docker, but you can get some inspiration from `scripts/step_into.sh` in order to be able to do the visualizations.
+You can also access a prebuilt docker image in dockerhub:
+```
+docker pull ktertikas/cgal:latest
+```
+
+Then you can access the Docker image as usual. CGAL demos that use qt5 for visualization have issues playing well with Docker, but you can get some inspiration from `scripts/step_into.sh` in order to be able to do the visualizations.
